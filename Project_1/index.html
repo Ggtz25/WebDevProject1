@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-circle"></div>
+        <h1>Tweeter</h1>
+    </nav>
+
+    <main class="container">
+        <div class="tweet-box">
+            <div class="profile-circle"></div>
+            <text area id="tweetInput"
+            placeholder="Whats happeninng"
+            maxlength="160"
+            oninput="updateCharacterCount()"></textarea>
+            <div class="tweet-controls">
+                <label id="charCount">160 characters remaining</label>
+                <button id="tweetButton" onclick="validateTweet()">tweet</button>
+            </div>
+        </div>
+        <div class="tweet">
+            <div class="profile-circle"></div>
+            <div class="tweet-content">
+            <div class="tweet-header">
+                <span class="name">Name Name</span>
+                <span class="username">@name</span>
+                <span class="time">Feb ## ####</span>
+            </div>
+            <p> this is a sample tweet for my Project</p>
+           <div class="tweet-icons">
+            <span>💬</span>
+            <span>🔁</span>
+            <span>🔗</span>
+            <span>⬆️</span>
+           </div>
+        </div>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
